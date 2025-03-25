@@ -1,0 +1,34 @@
+﻿@model TamagotchiApp.Models.Pet
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.Name</title>
+</head>
+<body>
+
+    <p>ID: @Model.Id</p>
+
+    <h1>@Model.Name</h1>
+    <p><strong>Hunger:</strong> @Model.Hunger</p>
+    <p><strong>Happiness:</strong> @Model.Happiness</p>
+    <p><strong>Energy:</strong> @Model.Energy</p>
+    <p><strong>Last Updated:</strong> @Model.LastUpdated</p>
+
+    <!-- Formulario para alimentar al Tamagotchi -->
+    <form action="/Pet/Feed" method="post">
+        <button type="submit">Feed</button>
+    </form>
+
+    <!-- Otros formularios para jugar y dormir -->
+    <form action="/Pet/Play" method="post">
+        <button type="submit">Play</button>
+    </form>
+
+    <form action="/Pet/Sleep" method="post">
+        <button type="submit">Sleep</button>
+    </form>
+</body>
+</html>
