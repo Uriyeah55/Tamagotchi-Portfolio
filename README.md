@@ -14,7 +14,7 @@ Está pendiente mejorar la interfaz gráfica y añadir animaciones con Javascrip
 
 ## Librerías usadas (y por qué)
 
-1. xUnit
+1. ### xUnit
 - Para las pruebas unitarias y garantizar que la lógica del código funcione correctamente.
 2. Entity Framework Core
 - Utilizado para interactuar con la base de datos SQLite mediante el ORM (Object-Relational Mapping). Facilita las operaciones de la base de datos, como insertar, actualizar y consultar las mascotas, sin tener que escribir SQL manualmente.
